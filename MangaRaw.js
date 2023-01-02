@@ -31,7 +31,7 @@
 function getBits (data, position, max) {
     var bits = 0;
     
-    for (var i = 1; power != max;) {
+    for (var i = 1; i != max;) {
         var tmp = data.val & data.position;
         data.position >>= 1;
         if (0 == data.position) {
