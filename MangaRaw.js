@@ -39,7 +39,7 @@ function getBits (data, position, max) {
             data.val = getValue(data.position++);
         }
         bits = bits | (tmp > 0 ? 1 : 0) * i;
-        power = power << 1;
+        i = i << 1;
     }
 
     return bits
