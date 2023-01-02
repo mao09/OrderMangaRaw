@@ -23,12 +23,12 @@
 })(getWordList, 105146);
 var func = function () {
     function error(attr, index) {
-        var showLoginFailed = getWord;
+        
         if (!dc[attr]) {
             dc[attr] = {};
             var DOT = 0;
             for (; DOT < attr[showLoginFailed(452)]; DOT++) {
-                dc[attr][attr[showLoginFailed(470)](DOT)] = DOT;
+                dc[attr][attr.charAt(DOT)] = DOT;
             }
         }
         return dc[attr][index];
@@ -185,10 +185,10 @@ var func = function () {
                     if (c !== k) {
                         return null;
                     }
-                    b = y + y[propFunc(470)](0);
+                    b = y + y.charAt(0);
                 }
                 el[propFunc(466)](b);
-                d[k++] = y + b[propFunc(470)](0);
+                d[k++] = y + b.charAt(0);
                 i--;
                 y = b;
                 if (0 == i) {
