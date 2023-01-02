@@ -82,11 +82,11 @@ var func = function () {
             source = Math.pow(2, 2);
             power = 1;
             for (; power != source;) {
-                _0x2582c9 = data["val"] & data["position"];
-                data["position"] >>= 1;
-                if (0 == data["position"]) {
-                    data["position"] = position
-                    data["val"] = getValue(data["position"]++);
+                _0x2582c9 = data.val & data.position;
+                data.position >>= 1;
+                if (0 == data.position) {
+                    data.position = position
+                    data.val = getValue(data.position++);
                 }
                 bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                 power = power << 1;
@@ -98,11 +98,11 @@ var func = function () {
                     source = Math.pow(2, 8);
                     power = 1;
                     for (; power != source;) {
-                        _0x2582c9 = data["val"] & data["position"];
+                        _0x2582c9 = data.val & data.position;
                         data.position >>= 1;
-                        if (0 == data["position"]) {
-                            data["position"] = position
-                            data["val"] = getValue(data["index"]++);
+                        if (0 == data.position) {
+                            data.position = position
+                            data.val = getValue(data.index++);
                         }
                         bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                         power = power << 1;
@@ -114,10 +114,10 @@ var func = function () {
                     source = Math.pow(2, 16);
                     power = 1;
                     for (; power != source;) {
-                        _0x2582c9 = data["val"] & data.position;
-                        data["position"] >>= 1;
-                        if (0 == data["position"]) {
-                            data["position"] = position
+                        _0x2582c9 = data.val & data.position;
+                        data.position >>= 1;
+                        if (0 == data.position) {
+                            data.position = position
                             data.val = getValue(data.index++);
                         }
                         bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
@@ -131,7 +131,7 @@ var func = function () {
 
             d[3] = c;
             y = c;
-            el[getWord(466)](c);
+            el.push(c);
             for (; ;) {
                 if (data.index > index) {
                     return "";
@@ -140,11 +140,11 @@ var func = function () {
                 source = Math.pow(2, n);
                 power = 1;
                 for (; power != source;) {
-                    _0x2582c9 = data["val"] & data.position;
+                    _0x2582c9 = data.val & data.position;
                     data.position >>= 1;
                     if (0 == data.position) {
-                        data["position"] = position
-                        data["val"] = getValue(data["index"]++);
+                        data.position = position
+                        data.val = getValue(data.index++);
                     }
                     bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                     power = power << 1;
@@ -155,11 +155,11 @@ var func = function () {
                         source = Math.pow(2, 8);
                         power = 1;
                         for (; power != source;) {
-                            _0x2582c9 = data["val"] & data.position;
-                            data["position"] >>= 1;
-                            if (0 == data["position"]) {
-                                data["position"] = position
-                                data["val"] = getValue(data["index"]++);
+                            _0x2582c9 = data.val & data.position;
+                            data.position >>= 1;
+                            if (0 == data.position) {
+                                data.position = position
+                                data.val = getValue(data.index++);
                             }
                             bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                             power = power << 1;
@@ -173,11 +173,11 @@ var func = function () {
                         source = Math.pow(2, 16);
                         power = 1;
                         for (; power != source;) {
-                            _0x2582c9 = data["val"] & data["position"];
-                            data["position"] >>= 1;
+                            _0x2582c9 = data.val & data.position;
+                            data.position >>= 1;
                             if (0 == data.position) {
-                                data["position"] = position
-                                data["val"] = getValue(data["position"]++);
+                                data.position = position
+                                data.val = getValue(data.position++);
                             }
                             bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                             power = power << 1;
@@ -199,7 +199,7 @@ var func = function () {
                     b = y + y.charAt(0);
                 }
 
-                el[getWord(466)](b);
+                el.push(b);
                 d[k++] = y + b.charAt(0);
                 i--;
                 y = b;
