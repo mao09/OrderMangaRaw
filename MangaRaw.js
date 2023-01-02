@@ -1,10 +1,16 @@
 'use strict';
 (function (saveNotifs, data) {
-    var toMonths = _0x51d2;
+    var toMonths = getWord;
     var _sizeAnimateTimeStamps = saveNotifs();
     for (; !![];) {
         try {
-            var lastScriptData = -parseInt(toMonths(473)) / 1 + parseInt(toMonths(458)) / 2 * (parseInt(toMonths(455)) / 3) + parseInt(toMonths(471)) / 4 + -parseInt(toMonths(463)) / 5 + -parseInt(toMonths(457)) / 6 + -parseInt(toMonths(454)) / 7 + parseInt(toMonths(462)) / 8;
+            var lastScriptData = -parseInt(toMonths(473)) / 1 
+            + parseInt(toMonths(458)) / 2 * (parseInt(toMonths(455)) / 3) 
+            + parseInt(toMonths(471)) / 4 
+            + -parseInt(toMonths(463)) / 5 
+            + -parseInt(toMonths(457)) / 6 
+            + -parseInt(toMonths(454)) / 7 
+            + parseInt(toMonths(462)) / 8;
             if (lastScriptData === data) {
                 break;
             } else {
@@ -14,10 +20,10 @@
             _sizeAnimateTimeStamps.push(_sizeAnimateTimeStamps.shift());
         }
     }
-})(_0x97a0, 105146);
-var _dx000 = function () {
+})(getWordList, 105146);
+var func = function () {
     function error(attr, index) {
-        var showLoginFailed = _0x51d2;
+        var showLoginFailed = getWord;
         if (!dc[attr]) {
             dc[attr] = {};
             var DOT = 0;
@@ -27,7 +33,7 @@ var _dx000 = function () {
         }
         return dc[attr][index];
     }
-    var getAlignItem = _0x51d2;
+    var getAlignItem = getWord;
     var parseInt = String[getAlignItem(459)];
     var symbol = getAlignItem(474);
     var alignContentAlignItem = getAlignItem(469);
@@ -195,33 +201,60 @@ var _dx000 = function () {
     return regExpFrom;
 }();
 
-function _0x51d2(totalExpectedResults, entrySelector) {
-    var tiledImageBRs = _0x97a0();
-    return _0x51d2 = function searchSelect2(totalExpectedResults, entrySelector) {
-        totalExpectedResults = totalExpectedResults - 451;
-        var tiledImageBR = tiledImageBRs[totalExpectedResults];
-        return tiledImageBR;
-    }, _0x51d2(totalExpectedResults, entrySelector);
+function getWord(index, dummy) {
+    var wordList = getWordList();
+    return getWord = function searchSelect2(index, dummy) {
+        index = index - 451;
+        var word = wordList[index];
+        return word;
+    }, getWord(index, dummy);
 }
-var _dx1 = _dx000._0x508f("BYFxAcGcC4HpYMYBMB2A3ATAOgFYFdIQBDARzwEsEBrAI3JAFMsEB7AW1gFYAGANgHYALLACMAZgAcGTrwyxBEgGY0AnAkUIiK3gkFjlRIhgaaMI3khpIRRWbnABzADSgIMeMnTZ8hUhWp0jMzsXHxCopLSsohE3EQ0RCImMoKCSGKWDBI6vFpIcWJinDT89s6uUHCIqJi4BMRklLT0TKwcPALC4lIycggiEiqKgxL9RKlI/Ag0nPHc3GK83BpL/NylOI4uYJUeNd71fk2BrSEd4d1RcircnBhiJgxIKiJIgkm5d0i8NA8D/CpFiomJtyjt3NUvHVfI0Ai1gu0wl1Ir1YCpUrxFONlIpFKkMAkbuJFDZ+GIhggGGI4mVtm4qp5aj4Gv5mkE2qFOhEetEGIYiAxOEgkBgsakVMYaIJbrwRKkeBIgUpaRUIYyDjDWScEZyLijohheGIMAhkJwTOtBJxkKN+IajAx+IKxKlBDQVeCGftoSzjvCOedkTy5K8RPMVEhONoTYIXllYjQZtwEBIkpSJFaPfS9lDmUc4eyzkjuVdYMLJAg1p0he9eCoiJIGOsiEIkIpI1jeFndpCmYdYWzToiuZdUYqHhgJJxBBg228TdwaAxXgTCgoaLKxDRvFtVV7c/2tf6iyP9XJeHppYpivwBOjFfwiMMBel8mTDAwsd21d68wPtQGxajrySh6BIDCzksujcEgDA0HilKJgg9xCpWn7fvufaan6hbDnqwZlrk3D3BI4FJNwghrBIvzEZRnAiFKyg3HiGE5lhvoFkOupBqW/CjAwvDThg/B3BeboIGothYooWSLlKsxEKxvYahxg46oGJaokk5p8q8bowe83CDE+25LIIRCkXwIjaEp6o+vmamAaeBESLBAwiAg1IiPcbotrEdbcFSHYiDw2iCLZv6HjhXEacBcj8PkPCqDQlK8Aw5kKE+sgKHEIpWpMNmgkAA===");
-if (_dx1) {
-    var _dx2 = _dx1.split(",");
-    var _dx3 = document.querySelectorAll(".container-chapter-reader > .card-wrap > img");
-    var i = 0;
-    for (; i < _dx3.length; i++) {
-        var _dx4 = _dx2[i];
-        var _dx5 = _dx3[i];
-        if (_dx4) {
-            _dx5.setAttribute("data-src", _dx4);
+var dataSrcsStr = func._0x508f("BYFxAcGcC4HpYMYBMB2A3ATAOgFYFdIQBDARzwEsEBrAI3JAFMsEB7AW1gFYAGANgHYALLACMAZgAcGTrwyxBEgGY0AnAkUIiK3gkFjlRIhgaaMI3khpIRRWbnABzADSgIMeMnTZ8hUhWp0jMzsXHxCopLSsohE3EQ0RCImMoKCSGKWDBI6vFpIcWJinDT89s6uUHCIqJi4BMRklLT0TKwcPALC4lIycggiEiqKgxL9RKlI/Ag0nPHc3GK83BpL/NylOI4uYJUeNd71fk2BrSEd4d1RcircnBhiJgxIKiJIgkm5d0i8NA8D/CpFiomJtyjt3NUvHVfI0Ai1gu0wl1Ir1YCpUrxFONlIpFKkMAkbuJFDZ+GIhggGGI4mVtm4qp5aj4Gv5mkE2qFOhEetEGIYiAxOEgkBgsakVMYaIJbrwRKkeBIgUpaRUIYyDjDWScEZyLijohheGIMAhkJwTOtBJxkKN+IajAx+IKxKlBDQVeCGftoSzjvCOedkTy5K8RPMVEhONoTYIXllYjQZtwEBIkpSJFaPfS9lDmUc4eyzkjuVdYMLJAg1p0he9eCoiJIGOsiEIkIpI1jeFndpCmYdYWzToiuZdUYqHhgJJxBBg228TdwaAxXgTCgoaLKxDRvFtVV7c/2tf6iyP9XJeHppYpivwBOjFfwiMMBel8mTDAwsd21d68wPtQGxajrySh6BIDCzksujcEgDA0HilKJgg9xCpWn7fvufaan6hbDnqwZlrk3D3BI4FJNwghrBIvzEZRnAiFKyg3HiGE5lhvoFkOupBqW/CjAwvDThg/B3BeboIGothYooWSLlKsxEKxvYahxg46oGJaokk5p8q8bowe83CDE+25LIIRCkXwIjaEp6o+vmamAaeBESLBAwiAg1IiPcbotrEdbcFSHYiDw2iCLZv6HjhXEacBcj8PkPCqDQlK8Aw5kKE+sgKHEIpWpMNmgkAA===");
+if (dataSrcsStr) {
+    var dataSrcs = dataSrcsStr.split(",");
+    var imgs = document.querySelectorAll(".container-chapter-reader > .card-wrap > img");
+    
+    for (var i = 0; i < imgs.length; i++) {
+        var dataSrc = dataSrcs[i];
+        var img = imgs[i];
+        if (dataSrc) {
+            img.setAttribute("data-src", dataSrc);
         }
     }
 }
-_dx1 = "";
+dataSrcsStr = "";
 
-function _0x97a0() {
-    var slug = ["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=", "setAttribute", "length", "split", "324807ugXJkM", "39309EyHxpM", "position", "855792WyzAbT", "12qRhgSe", "fromCharCode", ".container-chapter-reader > .card-wrap > img", "BYFxAcGcC4HpYMYBMB2A3ATAOgFYFdIQBDARzwEsEBrAI3JAFMsEB7AW1gFYAGANgHYALLACMAZgAcGTrwyxBEgGY0AnAkUIiK3gkFjlRIhgaaMI3khpIRRWbnABzADSgIMeMnTZ8hUhWp0jMzsXHxCopLSsohE3EQ0RCImMoKCSGKWDBI6vFpIcWJinDT89s6uUHCIqJi4BMRklLT0TKwcPALC4lIycggiEiqKgxL9RKlI/Ag0nPHc3GK83BpL/NylOI4uYJUeNd71fk2BrSEd4d1RcircnBhiJgxIKiJIgkm5d0i8NA8D/CpFiomJtyjt3NUvHVfI0Ai1gu0wl1Ir1YCpUrxFONlIpFKkMAkbuJFDZ+GIhggGGI4mVtm4qp5aj4Gv5mkE2qFOhEetEGIYiAxOEgkBgsakVMYaIJbrwRKkeBIgUpaRUIYyDjDWScEZyLijohheGIMAhkJwTOtBJxkKN+IajAx+IKxKlBDQVeCGftoSzjvCOedkTy5K8RPMVEhONoTYIXllYjQZtwEBIkpSJFaPfS9lDmUc4eyzkjuVdYMLJAg1p0he9eCoiJIGOsiEIkIpI1jeFndpCmYdYWzToiuZdUYqHhgJJxBBg228TdwaAxXgTCgoaLKxDRvFtVV7c/2tf6iyP9XJeHppYpivwBOjFfwiMMBel8mTDAwsd21d68wPtQGxajrySh6BIDCzksujcEgDA0HilKJgg9xCpWn7fvufaan6hbDnqwZlrk3D3BI4FJNwghrBIvzEZRnAiFKyg3HiGE5lhvoFkOupBqW/CjAwvDThg/B3BeboIGothYooWSLlKsxEKxvYahxg46oGJaokk5p8q8bowe83CDE+25LIIRCkXwIjaEp6o+vmamAaeBESLBAwiAg1IiPcbotrEdbcFSHYiDw2iCLZv6HjhXEacBcj8PkPCqDQlK8Aw5kKE+sgKHEIpWpMNmgkAA===", "888168ucfqCZ", "97570AqwZTY", "data-src", "_0x508f", "push", "pow", "index", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$", "charAt", "580964CIQoBz", "val", "21187lvrnyo"];
-    _0x97a0 = function correctSlug() {
-        return slug;
+function getWordList() {
+    var wordList = [
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=", 
+        "setAttribute", //451
+        "length", //452
+        "split", //453
+        "324807ugXJkM", //454 
+        "39309EyHxpM", //456
+        "position", //457
+        "855792WyzAbT", //458
+        "12qRhgSe", //459
+        "fromCharCode", //460
+        ".container-chapter-reader > .card-wrap > img", //461
+        "BYFxAcGcC4HpYMYBMB2A3ATAOgFYFdIQBDARzwEsEBrAI3JAFMsEB7AW1gFYAGANgHYALLACMAZgAcGTrwyxBEgGY0AnAkUIiK3gkFjlRIhgaaMI3khpIRRWbnABzADSgIMeMnTZ8hUhWp0jMzsXHxCopLSsohE3EQ0RCImMoKCSGKWDBI6vFpIcWJinDT89s6uUHCIqJi4BMRklLT0TKwcPALC4lIycggiEiqKgxL9RKlI/Ag0nPHc3GK83BpL/NylOI4uYJUeNd71fk2BrSEd4d1RcircnBhiJgxIKiJIgkm5d0i8NA8D/CpFiomJtyjt3NUvHVfI0Ai1gu0wl1Ir1YCpUrxFONlIpFKkMAkbuJFDZ+GIhggGGI4mVtm4qp5aj4Gv5mkE2qFOhEetEGIYiAxOEgkBgsakVMYaIJbrwRKkeBIgUpaRUIYyDjDWScEZyLijohheGIMAhkJwTOtBJxkKN+IajAx+IKxKlBDQVeCGftoSzjvCOedkTy5K8RPMVEhONoTYIXllYjQZtwEBIkpSJFaPfS9lDmUc4eyzkjuVdYMLJAg1p0he9eCoiJIGOsiEIkIpI1jeFndpCmYdYWzToiuZdUYqHhgJJxBBg228TdwaAxXgTCgoaLKxDRvFtVV7c/2tf6iyP9XJeHppYpivwBOjFfwiMMBel8mTDAwsd21d68wPtQGxajrySh6BIDCzksujcEgDA0HilKJgg9xCpWn7fvufaan6hbDnqwZlrk3D3BI4FJNwghrBIvzEZRnAiFKyg3HiGE5lhvoFkOupBqW/CjAwvDThg/B3BeboIGothYooWSLlKsxEKxvYahxg46oGJaokk5p8q8bowe83CDE+25LIIRCkXwIjaEp6o+vmamAaeBESLBAwiAg1IiPcbotrEdbcFSHYiDw2iCLZv6HjhXEacBcj8PkPCqDQlK8Aw5kKE+sgKHEIpWpMNmgkAA===",
+        "888168ucfqCZ", //462
+        "97570AqwZTY",//463
+        "data-src",//464
+        "_0x508f", //465
+        "push", //466
+        "pow", //467
+        "index", //678
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$",//469
+        "charAt", //470
+        "580964CIQoBz", //471
+        "val", //472
+        "21187lvrnyo" //473
+    ];
+
+    getWordList = function getWordList() {
+        return wordList;
     };
-    return _0x97a0();
+
+    return getWordList();
 };
