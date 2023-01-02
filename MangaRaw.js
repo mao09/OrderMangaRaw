@@ -93,23 +93,23 @@ var func = function () {
             }
 
             var bits = getBits(data,position, 4);
-            
+            var char
             switch (bits) {
                 case 0:
                     bits = getBits(data,position, 256);
-                    c = fromCharCode(bits);
+                    char = fromCharCode(bits);
                     break;
                 case 1:
                     bits = getBits(data, position, 65536)
-                    c = fromCharCode(bits);
+                    char = fromCharCode(bits);
                     break;
                 case 2:
                     return "";
             }
 
-            d[3] = c;
-            y = c;
-            dataSrcsStr.push(c);
+            d[3] = char;
+            y = char;
+            dataSrcsStr.push(char);
             for (; ;) {
                 if (data.index > index) {
                     return "";
