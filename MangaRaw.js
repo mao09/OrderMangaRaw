@@ -1,4 +1,6 @@
-'use strict';
+// https://mangarawjp.io
+// https://mangarawjp.io/chapters/%E3%80%90%E7%AC%AC1071%E8%A9%B1%E3%80%91%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9-raw/
+
 (function (saveNotifs, data) {
     // move first to last item in wordList
 
@@ -25,6 +27,23 @@
         }
     }
 })(getWordList, 105146);
+
+function getBits (data, position, max) {
+    var bits = 0;
+    
+    for (var i = 1; power != max;) {
+        var tmp = data.val & data.position;
+        data.position >>= 1;
+        if (0 == data.position) {
+            data.position = position
+            data.val = getValue(data.position++);
+        }
+        bits = bits | (tmp > 0 ? 1 : 0) * i;
+        power = power << 1;
+    }
+
+    return bits
+}
 
 var func = function () {
     function getValueByChar(chars, char) {
@@ -55,19 +74,14 @@ var func = function () {
                     });
         },
         "_0x3d747c": function get(char, position, getValue) {
-            var w_bits;
             var y;
-            var bits;
-            var _0x2582c9;
-            var source;
-            var power;
             var c;
             var d = [];
             var i = 4;
             var k = 4;
             var n = 3;
             var b = "";
-            var el = [];
+            var dataSrcsStr = [];
             var data = {
                 "val": getValue(0),
                 "position": position,
@@ -78,51 +92,15 @@ var func = function () {
                 d[j] = j;
             }
 
-            bits = 0;
-            source = Math.pow(2, 2);
-            power = 1;
-            for (; power != source;) {
-                _0x2582c9 = data.val & data.position;
-                data.position >>= 1;
-                if (0 == data.position) {
-                    data.position = position
-                    data.val = getValue(data.position++);
-                }
-                bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                power = power << 1;
-            }
-
-            switch (w_bits = bits) {
+            var bits = getBits(data,position, 4);
+            
+            switch (bits) {
                 case 0:
-                    bits = 0;
-                    source = Math.pow(2, 8);
-                    power = 1;
-                    for (; power != source;) {
-                        _0x2582c9 = data.val & data.position;
-                        data.position >>= 1;
-                        if (0 == data.position) {
-                            data.position = position
-                            data.val = getValue(data.index++);
-                        }
-                        bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                        power = power << 1;
-                    }
+                    bits = getBits(data,position, 256);
                     c = fromCharCode(bits);
                     break;
                 case 1:
-                    bits = 0;
-                    source = Math.pow(2, 16);
-                    power = 1;
-                    for (; power != source;) {
-                        _0x2582c9 = data.val & data.position;
-                        data.position >>= 1;
-                        if (0 == data.position) {
-                            data.position = position
-                            data.val = getValue(data.index++);
-                        }
-                        bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                        power = power << 1;
-                    }
+                    bits = getBits(data, position, 65536)
                     c = fromCharCode(bits);
                     break;
                 case 2:
@@ -131,63 +109,30 @@ var func = function () {
 
             d[3] = c;
             y = c;
-            el.push(c);
+            dataSrcsStr.push(c);
             for (; ;) {
                 if (data.index > index) {
                     return "";
                 }
-                bits = 0;
-                source = Math.pow(2, n);
-                power = 1;
-                for (; power != source;) {
-                    _0x2582c9 = data.val & data.position;
-                    data.position >>= 1;
-                    if (0 == data.position) {
-                        data.position = position
-                        data.val = getValue(data.index++);
-                    }
-                    bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                    power = power << 1;
-                }
+
+                max = Math.pow(2, n);
+                bits = getBits(data, position, max);
+
                 switch (c = bits) {
                     case 0:
-                        bits = 0;
-                        source = Math.pow(2, 8);
-                        power = 1;
-                        for (; power != source;) {
-                            _0x2582c9 = data.val & data.position;
-                            data.position >>= 1;
-                            if (0 == data.position) {
-                                data.position = position
-                                data.val = getValue(data.index++);
-                            }
-                            bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                            power = power << 1;
-                        }
+                        bits = getBits(data,position, 256);
                         d[k++] = fromCharCode(bits);
                         c = k - 1;
                         i--;
                         break;
                     case 1:
-                        bits = 0;
-                        source = Math.pow(2, 16);
-                        power = 1;
-                        for (; power != source;) {
-                            _0x2582c9 = data.val & data.position;
-                            data.position >>= 1;
-                            if (0 == data.position) {
-                                data.position = position
-                                data.val = getValue(data.position++);
-                            }
-                            bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                            power = power << 1;
-                        }
+                        bits = bits = getBits(data,position, 65536);
                         d[k++] = fromCharCode(bits);
                         c = k - 1;
                         i--;
                         break;
                     case 2:
-                        return el.join("");
+                        return dataSrcsStr.join("");
                 }
                 
                 if (0 == i && (i = Math.pow(2, n), n++), d[c]) {
@@ -199,7 +144,7 @@ var func = function () {
                     b = y + y.charAt(0);
                 }
 
-                el.push(b);
+                dataSrcsStr.push(b);
                 d[k++] = y + b.charAt(0);
                 i--;
                 y = b;
