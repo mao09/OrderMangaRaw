@@ -126,7 +126,7 @@ var func = function () {
                         i--;
                         break;
                     case 1:
-                        bits = bits = getBits(data,position, 65536);
+                        bits = getBits(data,position, 65536);
                         d[k++] = fromCharCode(bits);
                         c = k - 1;
                         i--;
