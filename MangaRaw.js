@@ -1,54 +1,61 @@
 'use strict';
 (function (saveNotifs, data) {
-    var toMonths = getWord;
+    // move first to last item in wordList
+
     var _sizeAnimateTimeStamps = saveNotifs();
     for (; !![];) {
         try {
-            var lastScriptData = -parseInt(toMonths(473)) / 1 
-            + parseInt(toMonths(458)) / 2 * (parseInt(toMonths(455)) / 3) 
-            + parseInt(toMonths(471)) / 4 
-            + -parseInt(toMonths(463)) / 5 
-            + -parseInt(toMonths(457)) / 6 
-            + -parseInt(toMonths(454)) / 7 
-            + parseInt(toMonths(462)) / 8;
+            var lastScriptData = -fromCharCode("21187lvrnyo") / 1 //21187
+                + fromCharCode("12qRhgSe") / 2 * (fromCharCode("39309EyHxpM") / 3) //78618
+                + fromCharCode("580964CIQoBz") / 4 //145241
+                + -fromCharCode("97570AqwZTY") / 5 //19514
+                + -fromCharCode("855792WyzAbT") / 6 //142632
+                + -fromCharCode("324807ugXJkM") / 7 //46401
+                + fromCharCode("888168ucfqCZ") / 8; //111021
+
+            // 21187 + 78618 + 145241 - 19514 - 142632 - 46401 + 111021
+            // = 147520
             if (lastScriptData === data) {
                 break;
             } else {
                 _sizeAnimateTimeStamps.push(_sizeAnimateTimeStamps.shift());
             }
-        } catch (_0xc801bf) {
+        } catch (ex) {
             _sizeAnimateTimeStamps.push(_sizeAnimateTimeStamps.shift());
         }
     }
 })(getWordList, 105146);
+
 var func = function () {
-    function error(attr, index) {
-        
-        if (!dc[attr]) {
-            dc[attr] = {};
-            var DOT = 0;
-            for (; DOT < attr[showLoginFailed(452)]; DOT++) {
-                dc[attr][attr.charAt(DOT)] = DOT;
+    function getValueByChar(chars, char) {
+
+        if (!dc[chars]) {
+            dc[chars] = {};
+
+            for (var i = 0; i < chars.length; i++) {
+                dc[chars][chars.charAt(i)] = i;
             }
         }
-        return dc[attr][index];
+        return dc[chars][char];
     }
-    var getAlignItem = getWord;
-    var parseInt = String[getAlignItem(459)];
-    var symbol = getAlignItem(474);
-    var alignContentAlignItem = getAlignItem(469);
+
+    var fromCharCode = String.fromCharCode;
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+    var chars2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+-$";
     var dc = {};
-    var regExpFrom = {
+    var func = {
         "_0x508f": function validateConnectorFn(value) {
-            var filter = getAlignItem;
-            return null == value ? "" : "" == value ? null : regExpFrom._0x3d747c(value[filter(452)], 32, function (e) {
-                return error(symbol, value.charAt(e));
-            });
+
+            return null == value
+                ? ""
+                : "" == value
+                    ? null :
+                    func._0x3d747c(value.length, 32, function (e) {
+                        return getValueByChar(chars, value.charAt(e));
+                    });
         },
-        "_0x3d747c": function get(index, value, require) {
-            var propFunc = getAlignItem;
+        "_0x3d747c": function get(char, position, getValue) {
             var w_bits;
-            var duration;
             var y;
             var bits;
             var _0x2582c9;
@@ -62,124 +69,128 @@ var func = function () {
             var b = "";
             var el = [];
             var data = {
-                "val": require(0),
-                "position": value,
+                "val": getValue(0),
+                "position": position,
                 "index": 1
             };
-            duration = 0;
-            for (; 3 > duration; duration = duration + 1) {
-                d[duration] = duration;
+
+            for (var j = 0; 3 > j; j = j + 1) {
+                d[j] = j;
             }
+
             bits = 0;
-            source = Math[propFunc(467)](2, 2);
+            source = Math.pow(2, 2);
             power = 1;
             for (; power != source;) {
-                _0x2582c9 = data[propFunc(472)] & data[propFunc(456)];
-                data[propFunc(456)] >>= 1;
-                if (0 == data[propFunc(456)]) {
-                    data[propFunc(456)] = value;
-                    data[propFunc(472)] = require(data[propFunc(468)]++);
+                _0x2582c9 = data["val"] & data["position"];
+                data["position"] >>= 1;
+                if (0 == data["position"]) {
+                    data["position"] = position
+                    data["val"] = getValue(data["position"]++);
                 }
                 bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                 power = power << 1;
             }
+
             switch (w_bits = bits) {
-            case 0:
-                bits = 0;
-                source = Math[propFunc(467)](2, 8);
-                power = 1;
-                for (; power != source;) {
-                    _0x2582c9 = data[propFunc(472)] & data[propFunc(456)];
-                    data.position >>= 1;
-                    if (0 == data[propFunc(456)]) {
-                        data[propFunc(456)] = value;
-                        data[propFunc(472)] = require(data[propFunc(468)]++);
-                    }
-                    bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                    power = power << 1;
-                }
-                c = parseInt(bits);
-                break;
-            case 1:
-                bits = 0;
-                source = Math.pow(2, 16);
-                power = 1;
-                for (; power != source;) {
-                    _0x2582c9 = data[propFunc(472)] & data.position;
-                    data[propFunc(456)] >>= 1;
-                    if (0 == data[propFunc(456)]) {
-                        data[propFunc(456)] = value;
-                        data.val = require(data.index++);
-                    }
-                    bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                    power = power << 1;
-                }
-                c = parseInt(bits);
-                break;
-            case 2:
-                return "";
-            }
-            d[3] = c;
-            y = c;
-            el[propFunc(466)](c);
-            for (;;) {
-                if (data.index > index) {
-                    return "";
-                }
-                bits = 0;
-                source = Math[propFunc(467)](2, n);
-                power = 1;
-                for (; power != source;) {
-                    _0x2582c9 = data[propFunc(472)] & data.position;
-                    data.position >>= 1;
-                    if (0 == data.position) {
-                        data[propFunc(456)] = value;
-                        data[propFunc(472)] = require(data[propFunc(468)]++);
-                    }
-                    bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
-                    power = power << 1;
-                }
-                switch (c = bits) {
                 case 0:
                     bits = 0;
-                    source = Math[propFunc(467)](2, 8);
+                    source = Math.pow(2, 8);
                     power = 1;
                     for (; power != source;) {
-                        _0x2582c9 = data[propFunc(472)] & data.position;
-                        data[propFunc(456)] >>= 1;
-                        if (0 == data[propFunc(456)]) {
-                            data.position = value;
-                            data[propFunc(472)] = require(data[propFunc(468)]++);
+                        _0x2582c9 = data["val"] & data["position"];
+                        data.position >>= 1;
+                        if (0 == data["position"]) {
+                            data["position"] = position
+                            data["val"] = getValue(data["index"]++);
                         }
                         bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                         power = power << 1;
                     }
-                    d[k++] = parseInt(bits);
-                    c = k - 1;
-                    i--;
+                    c = fromCharCode(bits);
                     break;
                 case 1:
                     bits = 0;
                     source = Math.pow(2, 16);
                     power = 1;
                     for (; power != source;) {
-                        _0x2582c9 = data[propFunc(472)] & data[propFunc(456)];
-                        data[propFunc(456)] >>= 1;
-                        if (0 == data.position) {
-                            data.position = value;
-                            data[propFunc(472)] = require(data[propFunc(468)]++);
+                        _0x2582c9 = data["val"] & data.position;
+                        data["position"] >>= 1;
+                        if (0 == data["position"]) {
+                            data["position"] = position
+                            data.val = getValue(data.index++);
                         }
                         bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
                         power = power << 1;
                     }
-                    d[k++] = parseInt(bits);
-                    c = k - 1;
-                    i--;
+                    c = fromCharCode(bits);
                     break;
                 case 2:
-                    return el.join("");
+                    return "";
+            }
+
+            d[3] = c;
+            y = c;
+            el[getWord(466)](c);
+            for (; ;) {
+                if (data.index > index) {
+                    return "";
                 }
-                if (0 == i && (i = Math[propFunc(467)](2, n), n++), d[c]) {
+                bits = 0;
+                source = Math.pow(2, n);
+                power = 1;
+                for (; power != source;) {
+                    _0x2582c9 = data["val"] & data.position;
+                    data.position >>= 1;
+                    if (0 == data.position) {
+                        data["position"] = position
+                        data["val"] = getValue(data["index"]++);
+                    }
+                    bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
+                    power = power << 1;
+                }
+                switch (c = bits) {
+                    case 0:
+                        bits = 0;
+                        source = Math.pow(2, 8);
+                        power = 1;
+                        for (; power != source;) {
+                            _0x2582c9 = data["val"] & data.position;
+                            data["position"] >>= 1;
+                            if (0 == data["position"]) {
+                                data["position"] = position
+                                data["val"] = getValue(data["index"]++);
+                            }
+                            bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
+                            power = power << 1;
+                        }
+                        d[k++] = fromCharCode(bits);
+                        c = k - 1;
+                        i--;
+                        break;
+                    case 1:
+                        bits = 0;
+                        source = Math.pow(2, 16);
+                        power = 1;
+                        for (; power != source;) {
+                            _0x2582c9 = data["val"] & data["position"];
+                            data["position"] >>= 1;
+                            if (0 == data.position) {
+                                data["position"] = position
+                                data["val"] = getValue(data["position"]++);
+                            }
+                            bits = bits | (_0x2582c9 > 0 ? 1 : 0) * power;
+                            power = power << 1;
+                        }
+                        d[k++] = fromCharCode(bits);
+                        c = k - 1;
+                        i--;
+                        break;
+                    case 2:
+                        return el.join("");
+                }
+                
+                if (0 == i && (i = Math.pow(2, n), n++), d[c]) {
                     b = d[c];
                 } else {
                     if (c !== k) {
@@ -187,7 +198,8 @@ var func = function () {
                     }
                     b = y + y.charAt(0);
                 }
-                el[propFunc(466)](b);
+
+                el[getWord(466)](b);
                 d[k++] = y + b.charAt(0);
                 i--;
                 y = b;
@@ -198,13 +210,13 @@ var func = function () {
             }
         }
     };
-    return regExpFrom;
+    return func;
 }();
 
 function getWord(index, dummy) {
     var wordList = getWordList();
     return getWord = function searchSelect2(index, dummy) {
-        index = index - 451;
+        index -= 451;
         var word = wordList[index];
         return word;
     }, getWord(index, dummy);
@@ -213,7 +225,7 @@ var dataSrcsStr = func._0x508f("BYFxAcGcC4HpYMYBMB2A3ATAOgFYFdIQBDARzwEsEBrAI3JA
 if (dataSrcsStr) {
     var dataSrcs = dataSrcsStr.split(",");
     var imgs = document.querySelectorAll(".container-chapter-reader > .card-wrap > img");
-    
+
     for (var i = 0; i < imgs.length; i++) {
         var dataSrc = dataSrcs[i];
         var img = imgs[i];
@@ -226,7 +238,7 @@ dataSrcsStr = "";
 
 function getWordList() {
     var wordList = [
-        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=", 
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=", //474
         "setAttribute", //451
         "length", //452
         "split", //453
