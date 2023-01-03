@@ -28,23 +28,6 @@
     }
 })(getWordList, 105146);
 
-function getBits (data, position, max) {
-    var bits = 0;
-    
-    for (var i = 1; i != max;) {
-        var tmp = data.val & data.position;
-        data.position >>= 1;
-        if (0 == data.position) {
-            data.position = position
-            data.val = getValue(data.position++);
-        }
-        bits = bits | (tmp > 0 ? 1 : 0) * i;
-        i = i << 1;
-    }
-
-    return bits
-}
-
 var func = function () {
     function getValueByChar(chars, char) {
 
@@ -73,7 +56,23 @@ var func = function () {
                         return getValueByChar(chars, value.charAt(e));
                     });
         },
-        "_0x3d747c": function get(char, position, getValue) {
+        "_0x3d747c": function get(index, position, getValue) {
+            function getBits (data, position, max) {
+                var bits = 0;
+                
+                for (var i = 1; i != max;) {
+                    var tmp = data.val & data.position;
+                    data.position >>= 1;
+                    if (0 == data.position) {
+                        data.position = position
+                        data.val = getValue(data.index++);
+                    }
+                    bits = bits | (tmp > 0 ? 1 : 0) * i;
+                    i = i << 1;
+                }
+            
+                return bits
+            }
             var y;
             var c;
             var d = [];
